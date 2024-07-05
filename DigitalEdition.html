@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="img/asu.jpeg" type="image/x-icon"/>
+       <title>Digital Humanities</title>
+    </head>
+    
+    <body>
+        <header id="top">
+            <nav> <ul>
+                <li><a href="./index.html">Main</a></li>
+                <li><a href="./DigitalEdition.html">Digital Edition</a></li>
+                <li><a href="./Notes.html">Notes</a></li>
+            </ul> </nav> 
+        </header>
+        
+        <main>
+            <p>Welcome to the digital edition (light) of Conan Doyle's <i>The Adventure of the Norwood Builder</i>, made as a project for the 2024 edition of the Antwerp Digital Humanities Summer School.</p>
+            
+            <h2 id='folio'>Page 62</h2>
+            <div id="stats"></div>
+            <div class="form-group">
+                <select class="form-control" id="sel-version" onChange="selectVersion(event)">
+                    <option value="all">All text</option>
+                    <option value="final">Final text (only additions)</option>
+                    <option value="first">First draft (no edits)</option>
+                </select>
+            </div>
+
+            <div id="block">
+                <img id="ms" width=50% src="sample_page_number.jpeg"/>
+                <div id="ed"><p>Text</p></div>
+            </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+        </main>
+
+        
+        <footer>
+            <p>This work is licensed under <a class="link" href="http://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-NonCommercial 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"></a></p>
+            <p><a href="https://bdmpmanual.uantwerpen.be/">BDMP encoding manual</a></p>
+            <p> <a class="link" href="#top">link to top of page</a> </p>
+        </footer>
+    </body>
+    
+    
+</html>
